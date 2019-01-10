@@ -9,8 +9,7 @@
 
 支持的Tags
 
-* [latest](https://github.com/daixijun/aliyun-cli-docker)
-* [3.0.7](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.7)
+* [3.0.7, latest (Dockerfile)](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.7)
 
 ## 使用示例
 
