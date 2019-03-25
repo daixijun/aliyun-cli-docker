@@ -1,15 +1,16 @@
 # 阿里云命令行工具 (Alibaba Cloud Command Line Interface)
 
-[![](https://images.microbadger.com/badges/image/daixijun1990/aliyun-cli.svg)](https://microbadger.com/images/daixijun1990/aliyun-cli "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/daixijun1990/aliyun-cli.svg)](https://microbadger.com/images/daixijun1990/aliyun-cli "Get your own version badge on microbadger.com")
+[![Get your own image badge on microbadger.com](https://images.microbadger.com/badges/image/daixijun1990/aliyun-cli.svg)](https://microbadger.com/images/daixijun1990/aliyun-cli "Get your own image badge on microbadger.com")
+[![Get your own version badge on microbadger.com](https://images.microbadger.com/badges/version/daixijun1990/aliyun-cli.svg)](https://microbadger.com/images/daixijun1990/aliyun-cli "Get your own version badge on microbadger.com")
 [![Build Status](https://travis-ci.org/daixijun/aliyun-cli-docker.svg?branch=master)](https://travis-ci.org/daixijun/aliyun-cli-docker)
 [![Docker Stars](https://img.shields.io/docker/stars/daixijun1990/aliyun-cli.svg?style=flat)](https://hub.docker.com/r/daixijun1990/aliyun-cli/)
-[![Docker Automated build](https://img.shields.io/docker/automated/daixijun1990/aliyun-cli.svg?style=flat)]()
-[![Docker Pulls](https://img.shields.io/docker/pulls/daixijun1990/aliyun-cli.svg)]()
+[![Docker Automated build](https://img.shields.io/docker/automated/daixijun1990/aliyun-cli.svg?style=flat)](https://img.shields.io/docker/automated/daixijun1990/aliyun-cli.svg?style=flat "Docker Automated build")
+[![Docker Pulls](https://img.shields.io/docker/pulls/daixijun1990/aliyun-cli.svg)](https://img.shields.io/docker/pulls/daixijun1990/aliyun-cli.svg "Docker Pulls")
 
 支持的Tags
 
-* [3.0.7, latest (Dockerfile)](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.7)
+* [3.0.7](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.7)
+* [3.0.8, latest (Dockerfile)](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.8)
 
 ## 使用示例
 
