@@ -1,5 +1,5 @@
 FROM alpine as builder
-ARG version
+ARG version=3.0.13
 RUN wget -q https://github.com/aliyun/aliyun-cli/releases/download/v${version}/aliyun-cli-linux-amd64.tar.gz -O - | tar -xzO aliyun > /tmp/aliyun \
     && chmod +x /tmp/aliyun 
 
