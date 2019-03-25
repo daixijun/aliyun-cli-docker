@@ -1,8 +1,16 @@
-sudo: required
+language: bash
 
 env:
-  - DOCKER_IMAGE=daixijun1990/aliyun-cli
-  - DOCKER_TAG=3.0.8
+  global:
+    - DOCKER_IMAGE=daixijun1990/aliyun-cli
+  matrix:
+    - VERSION=3.0.7
+    - VERSION=3.0.8
+    - VERSION=3.0.9
+    - VERSION=3.0.10
+    - VERSION=3.0.11
+    - VERSION=3.0.12
+    - VERSION=3.0.13 LATEST=true
 
 services:
   - docker
@@ -11,8 +19,10 @@ before_script:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 
 script:
-  - docker build --build-arg VERSION=${DOCKER_TAG} --tag $DOCKER_IMAGE:$DOCKER_TAG --tag $DOCKER_IMAGE:latest .
-
-after_success:
-  - docker push $DOCKER_IMAGE:$DOCKER_TAG
-  - docker push $DOCKER_IMAGE:latest
+  - docker build --build-arg version=$VERSION --tag $DOCKER_IMAGE:$VERSION .
+  - docker push $DOCKER_IMAGE:$VERSION
+  - |
+    if [ "$LATEST" == true ]; then
+      docker tag $DOCKER_IMAGE:$VERSION $DOCKER_IMAGE:latest
+      docker push $DOCKER_IMAGE:latest
+    fi

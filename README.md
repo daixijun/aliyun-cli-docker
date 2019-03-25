@@ -9,8 +9,13 @@
 
 支持的Tags
 
-* [3.0.7](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.7)
-* [3.0.8, latest (Dockerfile)](https://github.com/daixijun/aliyun-cli-docker/releases/tag/v3.0.8)
+* [3.0.7](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.7)
+* [3.0.8](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.8)
+* [3.0.9](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.9)
+* [3.0.10](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.10)
+* [3.0.11](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.11)
+* [3.0.12](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.12)
+* [3.0.13, latest](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.13)
 
 ## 使用示例
 
