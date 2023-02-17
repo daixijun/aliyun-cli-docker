@@ -1,9 +1,17 @@
-FROM alpine as builder
-ARG version=3.0.13
-RUN wget -q https://github.com/aliyun/aliyun-cli/releases/download/v${version}/aliyun-cli-linux-amd64.tar.gz -O - | tar -xzO aliyun > /tmp/aliyun \
-    && chmod +x /tmp/aliyun 
-
-FROM daixijun1990/scratch
+FROM debian:bullseye-slim
+ARG version=3.0.149
 LABEL author="Xijun Dai <daixijun1990@gmail.com>"
-COPY --from=builder /tmp/aliyun /aliyun
-ENTRYPOINT ["/aliyun"]
+ENV TZ=Shanghai
+RUN apt update -y && \
+    apt install wget tzdata ca-certificates -y && \
+    wget https://github.com/aliyun/aliyun-cli/releases/download/v${version}/aliyun-cli-linux-${version}-amd64.tgz -O - | tar -xzO aliyun > /usr/local/bin/aliyun-cli && \
+    chmod +x /usr/local/bin/aliyun-cli && \
+    ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime && \
+    echo "${TZ}" > /etc/timezone && \
+    apt remove wget -y && \
+    apt autoremove -y && \
+    apt clean && \
+    rm -rf /var/lib/apt/lists/*
+
+ENTRYPOINT [ "/usr/local/bin/aliyun-cli" ]
+CMD [ "version" ]
