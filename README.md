@@ -7,7 +7,7 @@
 
 支持的 Tags
 
-- [v3.0.147, v3.0, v3, latest](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.147)
+- [v3.0.149, v3.0, v3, latest](https://github.com/aliyun/aliyun-cli/releases/tag/v3.0.149)
 
 ## 使用示例
 
